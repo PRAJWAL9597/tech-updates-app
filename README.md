@@ -1,11 +1,11 @@
 # tech-updates-app
 This application will provide tech enthusiasts with a centralized web platform to stay updated on the latest technology news, blogs, and trends, with real-time aggregation, personalized features, and interactive options.
 
-# Project Vision
+Project Vision
 
 A centralized web platform to keep tech enthusiasts updated with the latest news,blogs and information in technology. This project uses Java Spring Boot for the backend and React.js for the frontend,providing real-time aggregated content,user personalization,and interactive features
 
-# Tech Stack
+Tech Stack
 
 Backend : Java Spring Boot
 Frontend : React.js
@@ -14,7 +14,7 @@ News Fetching : NewsAPI.org or RSS feed parsing
 Authentication : Spring Security (planned)
 Deployment : firebase
 
-# Project Structure
+Project Structure
 
 tech-news-app/
 │
@@ -48,7 +48,7 @@ tech-news-app/
 ├── README.md
 ├── .gitignore
 
-# Timeline & Milestone
+Timeline & Milestone
 
 Week 1 :- Setup & Documentation
 Week 2 :- User Authentication,Article Model,Frontend Integration
