@@ -1,14 +1,22 @@
 package com.notmine.tech_updates_app.model;
 
+import jakarta.persistence.*;
+
+@Entity //make this class sdaatabase entity
+@Table(name = "users") //specifies the table name in database
+
 public class User {
+    @Id //make this fieldd primary
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //tells database to auto genetrate this ID
+
         private long id;
         private String userName;
         private String email;
         private String passwordHash;
 
         //constructor
-        User(){}
-        User(long id,String userName,String email,String passwordHash){
+       public User(){}
+       public User(long id,String userName,String email,String passwordHash){
             this.id = id;
             this.userName = userName;
             this.email = email;

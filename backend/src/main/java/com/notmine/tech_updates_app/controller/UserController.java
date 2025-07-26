@@ -16,7 +16,7 @@ public class UserController {
             System.out.println("Recived Registration Request for : "+newUser.getUserName());
             System.out.println("Email"+ newUser.getEmail());
 
-            return "User"+newUser.getUserName()+"registered successfully";
+            return "User "+newUser.getUserName()+" registered successfully";
         }
         
 
