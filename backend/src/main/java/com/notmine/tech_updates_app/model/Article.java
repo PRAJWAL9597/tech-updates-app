@@ -1,13 +1,26 @@
 package com.notmine.tech_updates_app.model;
 
+import jakarta.persistence.*;
+
+@Entity //mark class as database entity
+@Table(name = "articles")
+
 public class Article {
+
+        @Id //marks this field as primary key
+        @GeneratedValue(strategy = GenerationType.IDENTITY) // tells database to autogenerate id
+
         private long id;
         private String title;
+         private String url;
+
+        @Column(columnDefinition = "TEXT") //use text type for potential long content
         private String content;
         private String publishedAt;
         private String source;
         private String category;
-        private String url;
+       
+        
 
         public Article(){}
         public Article(long id,String title,String content,String publishedAt,String source,String category,String url){
