@@ -70,7 +70,7 @@
 <dependency>
     <groupId>org.json</groupId>
     <artifactId>json</artifactId>
-    <version>20220924</version> <!-- Latest stable version as of now -->
+    <version>20220924</version>
 </dependency>
 	<dependency>
     <groupId>org.springframework.boot</groupId>
