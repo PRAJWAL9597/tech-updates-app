@@ -4,7 +4,7 @@ import com.notmine.tech_updates_app.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
-import java.util.List;
+// import java.util.List;
 
 
 @Repository // marks thsis a spring repo bean
