@@ -116,7 +116,7 @@ Create a database for this project, e.g., tech_news_db.
 
 Remember  PostgreSQL username and password (default user is usually postgres).</p>
 
-<h3>2. Add the PostgreSQL Database</h3>
+<h3>2. Add the PostgreSQL Database . </h3>
 <P>In  pom.xml file, include the PostgreSQL JDBC driver so that Spring Boot knows how to communicate with PostgreSQL:</P>
 
 <pre><code><dependency>
