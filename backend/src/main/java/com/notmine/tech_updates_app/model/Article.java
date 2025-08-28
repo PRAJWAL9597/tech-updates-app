@@ -12,7 +12,8 @@ public class Article {
 
         private long id;
         private String title;
-         private String url;
+        private String url;
+        private String imgURL;
 
         @Column(columnDefinition = "TEXT") //use text type for potential long content
         private String content;
@@ -23,7 +24,7 @@ public class Article {
         
 
         public Article(){}
-        public Article(long id,String title,String content,String publishedAt,String source,String category,String url){
+        public Article(long id,String title,String content,String publishedAt,String source,String category,String url,String imgURL){
                 this.id = id;
                 this.title = title;
                 this.content = content;
@@ -31,6 +32,7 @@ public class Article {
                 this.source = source;
                 this.category = category;
                 this.url = url;
+                this.imgURL = imgURL; 
 
         } 
 
@@ -56,6 +58,11 @@ public class Article {
         
         public String getUrl(){return url;}
         public void setUrl(String url){this.url = url;}
+
+        public String getimgURL(){return imgURL;}
+        public void setimgURL(String imgURL){this.imgURL = imgURL;}
+
+
 
    
 

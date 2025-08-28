@@ -40,6 +40,7 @@ public class ArticleService {
                 newArticle.setPublishedAt(obj.optString("publishedAt", ""));
                 newArticle.setSource(obj.getJSONObject("source").getString("name"));
                 newArticle.setCategory("technology");
+                newArticle.setimgURL(obj.optString("urlToImage",null));
 
                 articleRepository.save(newArticle); 
                 System.out.println("Saved new article: " + newArticle.getTitle());
